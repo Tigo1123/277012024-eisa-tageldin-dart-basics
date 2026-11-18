@@ -11,18 +11,18 @@ B3: initials - implemented and tested
 C5: drawTriangle - implemented and tested
 
 //in progress
-A1: not started.
-A2: not started.
-B1: not started.
-C1: not started.
-C2: not started.
-C3: not started.
-C4: not started.
-D1: not started.
-D2:momo receopt printer - not completed.
-E: not started.
-F: momo ussd simulator - not started.
-G: debugging log - not completed
+A1: Finished.
+A2: Finished.
+B1: Finished.
+C1: Finished.
+C2: Finished.
+C3: Finished.
+C4: Finished.
+D1: Finished.
+D2:momo Finished.
+E: Finished.
+F: Finished
+G: Finished
 
 //stuch on
 no current blockers

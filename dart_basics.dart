@@ -22,21 +22,6 @@ void main() {
 
   drawTriangle(-2);
 
-  int i = 1;
-  int totalFee = 0;
-  String phone = "0795331304";
-
-  while (i <= d + 3) {
-    int amount = i * 4000 + t * 100;
-    int fee = momoFee(amount);
-
-    print("Receipt $i | $amount RWF | Fee $fee RWF | to ${maskPhone(phone)}");
-
-    totalFee += fee;
-    i++;
-  }
-  print('Total fees: $totalFee RWF');
-
   bump();
   print(count);
 
@@ -49,6 +34,7 @@ void main() {
   print(addVat(1000, rate: 0));
 }
 
+//B2
 int countVowels(String text) {
   //by TGME
   int count = 0;
@@ -62,6 +48,7 @@ int countVowels(String text) {
   return count;
 }
 
+//B3
 String initials(String fullname) {
   // by TGME
   String name = fullname.trim();
@@ -79,6 +66,7 @@ String initials(String fullname) {
   return result;
 }
 
+//C5
 void drawTriangle(int height) {
   //by TGME
   if (height <= 0) {
@@ -91,34 +79,6 @@ void drawTriangle(int height) {
 
     print(spaces + symbol * row);
   }
-}
-
-int momoFee(int amount) {
-  //by TGME
-  if (amount <= 0) {
-    return -1;
-  } else if (amount <= 1000) {
-    return 20;
-  } else if (amount <= 10000) {
-    return 100;
-  } else if (amount <= 150000) {
-    return 250;
-  } else {
-    return 1500;
-  }
-}
-
-String maskPhone(String phone) {
-  //by TGME
-  if (phone.length != 10) {
-    return "INVALID";
-  }
-
-  String first = phone.substring(0, 3);
-  String middle = '*' * (phone.length - 5);
-  String last = phone.substring(phone.length - 2);
-
-  return first + middle + last;
 }
 
 int count = 1;
@@ -137,3 +97,6 @@ int addVat(int price, {int rate = 18}) {
   //by TGME
   return price + price * rate ~/ 100;
 }
+
+//// Student: Tageldin Gasmalla Mohamed
+// Reg no: 27701
